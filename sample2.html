@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Project2</title>
+</head>
+<body>
+
+    <p>This is the link: 
+        <span id="link"></span>
+    </p>
+    <script>
+
+        var url= prompt("Enter your url");
+            if(url==null){
+                alert("Close");
+            }
+            if(url.substr(0, 4) == "http") {
+            
+            }else{
+                url= "http://" + url
+            }
+
+            var spanNode = document.getElementById("link");
+            var html = "<a href=' + url + '>" + url + "</a>"
+            spanNode.innerHTML = html;
+    </script>
+
+</body>
+
+</html>
