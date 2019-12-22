@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sample4</title>
+
+</head>
+<body>
+
+
+
+    <script>
+        function tip(totalAmount, tip=10, returnTipOnly=false) {
+            tip= tip/100;
+            var tipAmount= totalAmount*tip;
+           // console.log(tipAmount)
+            totalAmount=totalAmount+tipAmount;
+           // console.log(totalAmount)
+            if(returnTipOnly){
+                return tipAmount
+            }
+            return totalAmount;
+
+        }
+
+        var totalBill= tip(30, 10);
+        console.log(totalBill)
+
+        var totalTip= tip(30, 10, true);
+        console.log(totalTip)
+
+
+        
+      /*  var totalBill= tip(300, 10);
+        console.log(totalBill)
+
+        var totalTip= tip(300, 10, true);
+        console.log(totalTip) */
+
+
+    
+    </script>
+
+
+</body>
+
+</html>
